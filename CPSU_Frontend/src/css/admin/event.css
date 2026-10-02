@@ -1,0 +1,43 @@
+.calendar-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* event หลายวัน */
+.fc-daygrid-block-event {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* event วันเดียว */
+.fc-daygrid-dot-event {
+  color: #0d6efd !important;
+}
+
+.fc-daygrid-dot-event .fc-event-title {
+  color: #0d6efd !important;
+}
+
+/* dot */
+.fc-daygrid-dot-event .fc-event-dot {
+  border-color: #0d6efd;
+}
+
+/* hover */
+.fc-daygrid-dot-event:hover {
+  background-color: #f1f3f5;
+}
+
+.event-title {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e3a8a;
+  text-align: left;
+}

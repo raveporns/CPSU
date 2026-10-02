@@ -1,0 +1,142 @@
+.manual-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* ===== Sidebar ===== */
+
+.manual-sidebar {
+  width: 280px;
+  position: sticky;
+  top: 110px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+
+  border-right: 1px solid #eee;
+  padding-right: 15px;
+}
+
+/* scrollbar */
+
+.manual-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.manual-sidebar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* ===== Content ===== */
+
+.manual-content {
+  flex: 1;
+  max-width: 900px;
+}
+
+/* ===== Sidebar items ===== */
+
+.manual-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 8px;
+}
+
+.toc-main {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.toc-main:hover {
+  background: #f5f7ff;
+}
+
+.toc-main.active {
+  background: #0d6efd;
+  color: white;
+}
+
+/* sub link */
+
+.sub-link {
+  display: block;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  color: #666;
+  border-radius: 6px;
+  transition: 0.2s;
+  margin-left: 10px;
+}
+
+.sub-link:hover {
+  background: #f1f6ff;
+  color: #0d6efd;
+}
+
+.sub-link.active {
+  background: #e7f1ff;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ===== Section ===== */
+
+.manual-section {
+  margin-bottom: 100px;
+  scroll-margin-top: 120px;
+}
+
+.manual-section h4 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.manual-sub {
+  margin-bottom: 60px;
+  scroll-margin-top: 120px;
+}
+
+/* ===== Image ===== */
+
+.manual-section img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+.manual-section img:hover {
+  transform: scale(1.01);
+}
+
+/* ===== List ===== */
+
+.manual-sub ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.manual-sub li {
+  margin-bottom: 5px;
+}
+
+/* ===== TOC ===== */
+
+.manual-toc li {
+  list-style: none;
+}
+
+/* ===== background ===== */
+
+/* body {
+  background: #f6f7fb;
+} */

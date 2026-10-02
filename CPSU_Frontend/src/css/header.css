@@ -1,0 +1,16 @@
+.header-component {
+  background-color: #38419d;
+  color: #fff;
+  padding: 5px;
+  position: relative;
+  z-index: 1050;
+  /* overflow: visible; */
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 1rem;
+  /* overflow: visible; */
+}

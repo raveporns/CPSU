@@ -1,0 +1,108 @@
+/* document.css */
+
+.document-container {
+  max-width: 900px;
+  padding: 2rem 1rem;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Title */
+.section-title {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #003366;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Search */
+.search-input {
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  transition: 0.25s;
+}
+
+.search-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+}
+
+/* Card */
+.document-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.25s;
+}
+
+.document-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+/* Group title */
+.document-title {
+  font-weight: 600;
+  color: #0056b3;
+  border-left: 5px solid #0d6efd;
+  padding-left: 12px;
+  margin-bottom: 18px;
+}
+
+/* List */
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item */
+.document-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.document-item:last-child {
+  border-bottom: none;
+}
+
+/* Icon */
+.doc-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Link */
+.document-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.05rem;
+  transition: 0.2s;
+}
+
+.document-item a:hover {
+  color: #0d6efd;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .document-container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .document-item a {
+    font-size: 0.95rem;
+  }
+}

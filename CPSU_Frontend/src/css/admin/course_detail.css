@@ -1,0 +1,153 @@
+#text-header-coures {
+  text-align: start;
+  color: #38419d;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#text-title-course {
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+#text-content-course,
+#text-content-course2 {
+  font-size: 15px;
+  text-align: start;
+  white-space: pre-line; /* ให้รองรับการขึ้นบรรทัด */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#table-content,
+#table-header,
+#list-career {
+  text-align: start;
+}
+
+#course-name {
+  text-align: left;
+}
+
+/* ================= Action Buttons ================= */
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* ปุ่มแก้ไข */
+.btn-edit {
+  background: linear-gradient(135deg, #ffc107, #ffb300);
+  color: #333;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.25);
+  text-decoration: none;
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 193, 7, 0.35);
+  color: #000;
+}
+
+/* ปุ่มลบ */
+.btn-delete {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.25);
+}
+
+.btn-delete:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(220, 53, 69, 0.35);
+  background: linear-gradient(135deg, #c82333, #bd2130);
+}
+
+.structure-tree {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.structure-tree li {
+  position: relative;
+  padding-left: 20px;
+  margin: 6px 0;
+}
+
+/* เส้นแนวตั้ง */
+.structure-tree li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 2px solid #ccc;
+  height: 100%;
+}
+
+/* เส้นแนวนอน */
+.structure-tree li::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 15px;
+  border-top: 2px solid #ccc;
+}
+
+/* ตัดเส้นท้าย */
+.structure-tree li:last-child::before {
+  height: 12px;
+}
+
+.tree ul {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ccc;
+}
+
+.tree li {
+  margin: 6px 0;
+  position: relative;
+}
+
+.tree li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  width: 20px;
+  border-top: 2px solid #ccc;
+}
+
+.node {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.node span:first-child {
+  font-weight: 500;
+}
+
+.node span:last-child {
+  white-space: nowrap;
+  color: #555;
+}
+
+

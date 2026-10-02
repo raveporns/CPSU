@@ -1,0 +1,124 @@
+/* ขนาดการ์ดจำกัดความกว้าง */
+.teacher-card {
+  max-width: 1200px;
+}
+
+/* ภาพอาจารย์ */
+.img-profile {
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 15px; /* หรือ 8px ตามชอบ */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ตารางเวลาทำงาน */
+.office-hours th,
+.office-hours td {
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  border: 1px solid #dee2e6;
+  font-size: 0.95rem;
+}
+
+/* หัวข้อ */
+h5,
+h6 {
+  color: #333;
+}
+
+/* ลิงก์เว็บไซต์ */
+a {
+  word-break: break-word;
+}
+
+/* Spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ปุ่มคัดลอกแต่งเพิ่ม */
+.copy-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #0d6efd;
+  background-color: transparent;
+  color: #0d6efd;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.copy-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+/* การ์ดผลงานวิจัย */
+.teacher-research {
+  max-width: 1200px;
+  margin-top: 2rem;
+  background: #fff;
+  box-shadow: 0 0 12px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.research-list {
+  /* list-style: none; */
+  padding-left: 0;
+}
+
+.research-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* ===== Light mode ===== */
+
+.teacher-card,
+.teacher-research {
+  background: #ffffff;
+  color: #222;
+}
+
+
+/* ===== Dark mode ===== */
+
+.dark .teacher-card,
+.dark .teacher-research {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+
+/* เส้น hr */
+
+.dark .teacher-card hr,
+.dark .teacher-research hr {
+  border-color: #444;
+}
+
+
+/* link */
+
+.dark a {
+  color: #4da3ff;
+}
+
+
+/* text muted */
+
+.dark .text-muted {
+  color: #bbb !important;
+}
+
+.content-wrapper {
+  max-width: 1200px;  
+  margin: 0 auto;
+}

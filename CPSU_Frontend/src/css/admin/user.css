@@ -1,0 +1,22 @@
+.user-title {
+  padding: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1e3a8a;
+  text-align: left;
+}
+
+.btn-user {
+  color: white;
+  background-color: #1e40af;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-user:hover {
+  background-color: #173390;
+  color: white;
+}

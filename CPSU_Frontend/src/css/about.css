@@ -1,0 +1,262 @@
+/* =========================
+   About Page Layout
+========================= */
+
+.about-container {
+  padding: 3.5rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 1100px;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.about-hero {
+  width: 100%;
+  height: 260px;
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   Section
+========================= */
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1a237e;
+  border-left: 5px solid #1a237e;
+  padding-left: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+.about-section strong {
+  color: #1a237e;
+}
+
+/* =========================
+   White Box
+========================= */
+
+.white-box {
+  background: #fff;
+  padding: 2rem 2.2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2.5rem;
+}
+
+/* =========================
+   Timeline
+========================= */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* เส้น timeline */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  opacity: 70%;
+  background: #1a237e;
+  transform: translateX(-50%);
+  animation: timelineGrow 1.5s ease;
+}
+
+@keyframes timelineGrow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* item */
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* icon */
+
+.timeline-icon {
+  position: absolute;
+  top: 18px;
+  width: 38px;
+  height: 38px;
+  background: #1a237e;
+  opacity: 95%;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item.left .timeline-icon {
+  right: -19px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -19px;
+}
+
+/* content */
+
+.timeline-content {
+  background: #fff;
+  padding: 1rem 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  max-width: 320px;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content h5 {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+/* =========================
+   Animation
+========================= */
+
+.fade-in {
+  opacity: 0;
+}
+
+.timeline-item.left.fade-in.show {
+  animation: slideLeft 0.8s forwards;
+}
+
+.timeline-item.right.fade-in.show {
+  animation: slideRight 0.8s forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =========================
+   Map
+========================= */
+
+.map-container {
+  margin-top: 1rem;
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 15px;
+    left: 0 !important;
+    text-align: left !important;
+  }
+
+  .timeline-icon {
+    left: 2px !important;
+  }
+
+  .timeline-content {
+    max-width: 100%;
+  }
+}
+
+.timeline-icon i {
+  font-size: 18px;
+}

@@ -1,0 +1,25 @@
+/* custom colors */
+
+.bg-purple {
+  background-color: #6f42c1 !important;
+  color: white;
+}
+
+.bg-teal {
+  background-color: #20c997 !important;
+  color: white;
+}
+
+.bg-orange {
+  background-color: #fd7e14 !important;
+  color: white;
+}
+
+.card {
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
